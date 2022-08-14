@@ -1,17 +1,23 @@
-import { Routes, Route } from 'react-router-dom';
-import { Header, Home, ProductListingPage, ProductPage } from './components';
+import Navbar from './components/Navbar'
+import { Outlet } from 'react-router-dom'
+import { Fragment, useEffect } from 'react'
+import { install } from '@layer0/prefetch/window'
+import installDevtools from '@layer0/devtools/install'
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    // Enable service worker inside the window
+    install()
+    // Enable devtools manually, instead of relying on defaults by Layer0
+    installDevtools()
+  }, [])
   return (
-    <div>
-      <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/category/:slug" element={<ProductListingPage />} />
-        <Route path="/product/:slug" element={<ProductPage />} />
-      </Routes>
-    </div>
-  );
+    <Fragment>
+      <Navbar />
+      <Outlet />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" />
+    </Fragment>
+  )
 }
 
-export default App;
+export default App

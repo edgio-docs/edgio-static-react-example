@@ -1,35 +1,32 @@
 {
   "name": "layer0-react-example",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4",
-    "whatwg-fetch": "^3.6.2"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "layer0:dev": "npm run build && layer0 dev",
+    "layer0:dev": "layer0 dev",
     "layer0:build": "layer0 build",
-    "layer0:production": "npm run build && layer0 build && layer0 run --production",
-    "layer0:build:deploy": "npm run build && layer0 deploy",
-    "layer0:deploy": "layer0 deploy"
+    "layer0:deploy": "layer0 deploy",
+    "layer0:production": "layer0 run --production",
+    "format": "prettier --write '**/*' --ignore-unknown"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@layer0/cli": "^4.18.1",
+    "@layer0/core": "^4.18.1",
+    "@layer0/devtools": "^4.18.1",
+    "@layer0/prefetch": "^4.18.1",
+    "@layer0/react": "^4.18.1",
+    "autoprefixer": "^10.4.8",
+    "classnames": "^2.3.1",
+    "postcss": "^8.4.16",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.1.8"
   },
   "browserslist": {
     "production": [
@@ -42,15 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@layer0/cli": "^4.13.9",
-    "@layer0/core": "^4.13.9",
-    "@layer0/devtools": "^4.13.9",
-    "@layer0/prefetch": "^4.13.9",
-    "@layer0/react": "^4.13.9",
-    "autoprefixer": "^10.4.3",
-    "postcss": "^8.4.11",
-    "tailwindcss": "^3.0.23"
   }
 }
