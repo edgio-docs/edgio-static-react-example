@@ -1,5 +1,4 @@
-import LeftSidebar from './LeftSidebar'
-import RightSidebar from './RightSidebar'
+import Sidebar from './Sidebar'
 import ProductPreview from './ProductPreview'
 import { filterProducts } from '../lib/helper'
 import React, { useEffect, useState } from 'react'
@@ -32,13 +31,13 @@ const Commerce = ({}) => {
 
   return (
     <div className="flex-col items-center justify-start">
-      <div className="mb-5 flex w-full flex-row items-start px-5">
-        <div className="hidden w-[15%] pt-5 md:block">
-          <LeftSidebar />
+      <div className="flex w-full flex-row items-start px-5">
+        <div className="flex min-w-[200px] flex-col pt-5">
+          <Sidebar />
         </div>
-        <div className="flex w-full flex-col items-start pt-5 md:w-[70%]">
+        <div className="flex flex-col items-start pt-5">
           <h2 className="text-[#FFFFFF75]">Showing {loading ? '...' : data.length} Results</h2>
-          <div className="mt-5 flex flex-row flex-wrap items-start">
+          <div className="sm:grd-cols-2 mt-5 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
             {loading &&
               new Array(12)
                 .fill(0)
@@ -51,9 +50,6 @@ const Commerce = ({}) => {
                 .map((i) => <ProductPreview key={i.path} loading={true} {...i} />)}
             {!loading && data.map((i) => <ProductPreview key={i.path} {...i} />)}
           </div>
-        </div>
-        <div className="hidden w-[15%] pt-5 md:block">
-          <RightSidebar />
         </div>
       </div>
     </div>

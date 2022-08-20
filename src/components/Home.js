@@ -6,16 +6,16 @@ const Home = () => {
       <div className="flex min-h-[calc(100vh-56px)] flex-col items-center justify-center px-5 md:px-0">
         <div className="flex w-full flex-row flex-wrap justify-center md:w-[700px]">
           <div className="flex w-[330px] flex-col items-start justify-start rounded p-5 md:w-1/2">
-            <h1 className="text-xl font-bold text-white">Gatsby with Layer0</h1>
-            <h3 className="mt-2 text-lg text-[#FFFFFF75]">Layer0 supports all of the most powerful features of Gatsby!</h3>
-            <a className="mt-auto text-[#01B18D] hover:underline" href="https://docs.layer0.co/guides/gatsby" target="_blank">
+            <h1 className="text-xl font-bold text-white">React with Layer0</h1>
+            <h3 className="mt-2 text-lg text-[#FFFFFF75]">Layer0 supports all of the most powerful features of React!</h3>
+            <a className="mt-auto text-[#01B18D] hover:underline" href="https://docs.layer0.co/guides/react" target="_blank">
               Learn More &rarr;
             </a>
           </div>
           <div className="flex w-[330px] flex-col items-start justify-start rounded p-5 md:w-1/2">
-            <h1 className="text-xl font-bold text-white">React with Layer0</h1>
-            <h3 className="mt-2 text-lg text-[#FFFFFF75]">Layer0 supports all of the most powerful features of React!</h3>
-            <a className="mt-auto text-[#01B18D] hover:underline" href="https://docs.layer0.co/guides/react" target="_blank">
+            <h1 className="text-xl font-bold text-white">Next.js with Layer0</h1>
+            <h3 className="mt-2 text-lg text-[#FFFFFF75]">Layer0 supports all of the most powerful features of Next.js!</h3>
+            <a className="mt-auto text-[#01B18D] hover:underline" href="https://docs.layer0.co/guides/next" target="_blank">
               Learn More &rarr;
             </a>
           </div>
