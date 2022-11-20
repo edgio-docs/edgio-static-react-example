@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { Prefetch } from '@layer0/react'
+import { Prefetch } from '@edgio/react'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 

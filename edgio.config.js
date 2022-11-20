@@ -1,6 +1,5 @@
 module.exports = {
-  connector: './layer0',
-  routes: './layer0/routes.js',
+  connector: '@edgio/react-cra',
   backends: {
     // Define a domain or IP address to proxy as a backend
     // More on: https://docs.layer0.co/guides/layer0_config#backends

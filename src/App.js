@@ -1,10 +1,10 @@
-import { Metrics } from '@layer0/rum'
-import Router from '@layer0/rum/Router'
+import { Metrics } from '@edgio/rum'
+import Router from '@edgio/rum/Router'
 import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom'
 import { Fragment, useEffect } from 'react'
-import { install } from '@layer0/prefetch/window'
-import installDevtools from '@layer0/devtools/install'
+import { install } from '@edgio/prefetch/window'
+import installDevtools from '@edgio/devtools/install'
 
 const App = () => {
   useEffect(() => {

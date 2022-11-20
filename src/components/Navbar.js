@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Prefetch } from '@layer0/react'
+import { Prefetch } from '@edgio/react'
 
 const Navbar = () => {
   return (
