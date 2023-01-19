@@ -1,5 +1,5 @@
 {
-  "name": "layer0-static-react-example",
+  "name": "edgio-static-react-example",
   "scripts": {
     "edgio:dev": "edgio dev",
     "edgio:build": "edgio build",
@@ -13,12 +13,12 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
-    "@edgio/cli": "^5.0.4",
-    "@edgio/core": "^5.0.4",
-    "@edgio/devtools": "^5.0.4",
-    "@edgio/prefetch": "^5.0.4",
-    "@edgio/react": "^5.0.4",
-    "@edgio/react-cra": "^5.0.4",
+    "@edgio/cli": "^6.0.5",
+    "@edgio/core": "^6.0.5",
+    "@edgio/devtools": "^6.0.5",
+    "@edgio/prefetch": "^6.0.5",
+    "@edgio/react": "^6.0.5",
+    "@edgio/react-cra": "^6.0.5",
     "@edgio/rum": "^5.0.8",
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.8",
@@ -38,5 +38,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "repository": "git@github.com:edgio-docs/edgio-static-react-example.git"
 }
